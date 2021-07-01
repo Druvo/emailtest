@@ -6,7 +6,7 @@ using System.Net.Mail;
 
 namespace emailtest
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroFramework.Forms.MetroForm
     {
         public Form1()
         {
@@ -17,6 +17,17 @@ namespace emailtest
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+ 
+
+        }
+
+        private void metroLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -39,11 +50,15 @@ namespace emailtest
                 }
                 MessageBox.Show("Email sent!");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-            
+
+        }
+
+        private void metroLabel5_Click(object sender, EventArgs e)
+        {
 
         }
     }
